@@ -41,8 +41,8 @@
                             <td th:if="${meeting.getServiceType() != null}" th:text="${meeting.getStart().toString()}"></td>
                             <td th:if="${meeting.getServiceType() != null}" th:text="${meeting.getEnd().toString()}"></td>
                             <td th:if="${meeting.getServiceType() != null}" th:text="${meeting.getGuestsQuantity().toString()}"></td>
-                            <!--<td th:if="${meeting.getServiceType() != null}" th:each="guest,iter : ${participants_list}" th:text="${guest}"></td>-->
-                            <td th:if="${meeting.getServiceType() != null}" th:text="${participants_list}"></td>
+                            <td th:if="${meeting.getServiceType() != null}" th:each="guest,iter : ${participants_list}" th:text="${guest}"></td>
+                            <!--<td th:if="${meeting.getServiceType() != null}" th:text="${participants_list}"></td>-->
                             <td th:if="${meeting.getServiceType() != null}">
                                 <div>
                                     <a th:href="@{'/meetingUpdateForm/' + ${meeting.getId()}}" class="button">Edycja</a>
