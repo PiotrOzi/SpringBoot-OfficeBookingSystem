@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    username: root
+    password: Pitersql
+    url: jdbc:mysql://localhost:3306/booking_system?serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8080
